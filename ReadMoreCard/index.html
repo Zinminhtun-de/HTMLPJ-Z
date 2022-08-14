@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read More or Less More using Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="icon">
+          <img src="assets/img1.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>We & Mobile Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt
+            quos nobis debitis non officiis voluptates libero tenetur voluptate
+            pariatur. Culpa, ex iste odit accusantium ad distinctio
+            necessitatibus. Laborum, modi. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Vel sunt quos nobis debitis non
+            officiis voluptates libero tenetur voluptate pariatur. Culpa, ex
+            iste odit accusantium ad distinctio necessitatibus. Laborum, modi.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="assets/img1.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>We & Mobile Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt
+            quos nobis debitis non officiis voluptates libero tenetur voluptate
+            pariatur. Culpa, ex iste odit accusantium ad distinctio
+            necessitatibus. Laborum, modi. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Vel sunt quos nobis debitis non
+            officiis voluptates libero tenetur voluptate pariatur. Culpa, ex
+            iste odit accusantium ad distinctio necessitatibus. Laborum, modi.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <img src="assets/img1.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>We & Mobile Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt
+            quos nobis debitis non officiis voluptates libero tenetur voluptate
+            pariatur. Culpa, ex iste odit accusantium ad distinctio
+            necessitatibus. Laborum, modi. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Vel sunt quos nobis debitis non
+            officiis voluptates libero tenetur voluptate pariatur. Culpa, ex
+            iste odit accusantium ad distinctio necessitatibus. Laborum, modi.
+          </p>
+        </div>
+        <a class="more"></a>
+      </div>
+    </div>
+
+    <script>
+      let more = document.querySelectorAll(".more");
+      for (let i = 0; i < more.length; i++) {
+        more[i].addEventListener("click", function () {
+          more[i].parentNode.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
